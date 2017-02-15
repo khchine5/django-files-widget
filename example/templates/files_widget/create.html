@@ -1,0 +1,14 @@
+{% extends "files_widget/base.html" %}
+
+{% block main-container %}
+<form action="" enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend> Add </legend>
+        {{ form|as_p }}
+    </fieldset>
+    <input type="submit" value="Creer"/>
+</form>
+
+
+{% endblock main-container %}
